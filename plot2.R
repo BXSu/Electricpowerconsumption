@@ -8,7 +8,6 @@ table$DateTime <- dmy_hms(table$DateTime)
 table$Date <- dmy(table$Date)
 df1<-filter(table,Date=="2007-02-01"|Date=="2007-02-02")
 
-
 # Make a new column that shows the day of the week
 df1$Wday<-wday(df1$DateTime,label = TRUE)
 
